@@ -29,3 +29,18 @@ Base URL: `http://localhost:3000/api/users`
 | GET     | `/api/users/:id` | Obtener usuario por ID        | —                                  |
 | PUT     | `/api/users/:id` | Actualizar usuario por ID     | `{ "age": 30 }`                    |
 | DELETE  | `/api/users/:id` | Eliminar usuario por ID       | —                                  |
+
+## 🐳 Despliegue con Docker
+
+Este proyecto incluye configuración con **Docker** y **Docker Compose** para levantar tanto el backend como la base de datos MongoDB en contenedores.
+
+### Requisitos previos
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado y corriendo.
+- [WSL 2 actualizado](https://learn.microsoft.com/es-es/windows/wsl/install) (en Windows).
+
+### Construir y levantar los contenedores
+
+En la raíz del proyecto (`user-api/`):
+
+```bash
+docker compose up --build
