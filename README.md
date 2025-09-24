@@ -17,3 +17,15 @@ Mini API RESTful para la **gestión de usuarios** desarrollada en **Node.js** co
    ```bash
    git clone https://github.com/TU_USUARIO/user-api.git
    cd user-api
+
+## 📌 Endpoints disponibles
+Base URL: `http://localhost:3000/api/users`
+
+| Método  | Endpoint          | Descripción                   | Ejemplo Body (JSON)                 |
+|---------|-----------------|-------------------------------|------------------------------------|
+| GET     | `/`              | Healthcheck                   | —                                  |
+| POST    | `/api/users`     | Crear usuario                 | `{ "name": "Ana", "email": "ana@example.com", "age": 25 }` |
+| GET     | `/api/users`     | Listar todos los usuarios     | —                                  |
+| GET     | `/api/users/:id` | Obtener usuario por ID        | —                                  |
+| PUT     | `/api/users/:id` | Actualizar usuario por ID     | `{ "age": 30 }`                    |
+| DELETE  | `/api/users/:id` | Eliminar usuario por ID       | —                                  |
